@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export const Navigation = (props) => {
 	return (
 		<nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -14,20 +14,20 @@ export const Navigation = (props) => {
 						<span className='icon-bar'></span>
 						<span className='icon-bar'></span>
 					</button>
-					<a className='navbar-brand page-scroll' href='#page-top'>
+					<Link className='navbar-brand page-scroll' to='/'>
 						Web Police
-					</a>
+					</Link >
 				</div>
 
 				<div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
 					<ul className='nav navbar-nav navbar-right'>
 						<li>
-							<Link to='/feature'>Features</Link>
+							<Link to='/Features' className='page-scroll'>Features</Link >
 						</li>
 						<li>
-							<a href='#about' className='page-scroll'>
+							<Link to='/About' className='page-scroll'>
 								About
-							</a>
+							</Link >
 						</li>
 						{/* <li>
               <a href='#services' className='page-scroll'>
@@ -45,19 +45,14 @@ export const Navigation = (props) => {
               </a>
             </li> */}
 						<li>
-							<a href='#team' className='page-scroll'>
-								Team
-							</a>
-						</li>
-						<li>
-							<a href='#contact' className='page-scroll'>
+							<Link to='/Contact' className='page-scroll'>
 								Contact
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href='#login' className='page-scroll'>
-								SignUp
-							</a>
+							<Link to='/signup' className='page-scroll'>
+								Registeration
+							</Link>
 						</li>
 					</ul>
 				</div>

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Navigation } from './components/navigation';
-import { Header } from './components/header';
-import { Features } from './components/features';
-import { About } from './components/about';
-
-import { Services } from './components/services';
+// import { Header } from './components/header';
+// import { Features } from './components/features';
+// import { About } from './components/about';
+import Routes from './Routes'
+// import { Services } from './components/services';
 import { Gallery } from './components/gallery';
 import { Testimonials } from './components/testimonials';
 import { Team } from './components/Team';
@@ -29,18 +29,22 @@ const App = () => {
 			<Router>
 				<Navigation />
 
-				<Header data={landingPageData.Header} />
+
+				<Routes />
+
+				{/* <Header data={landingPageData.Header} />
+				<Routes />
 				<Route path='/feature'>
 					<Features data={landingPageData.Features} />
 				</Route>
 
-				<About data={landingPageData.About} />
+				<About data={landingPageData.About} /> */}
 
 				{/* <Services data={landingPageData.Services} />
 			<Gallery /> */}
 				{/* <Testimonials data={landingPageData.Testimonials} />
 			<Team data={landingPageData.Team} /> */}
-				<Contact data={landingPageData.Contact} />
+				{/* <Contact data={landingPageData.Contact} /> */}
 			</Router>
 		</div>
 	);

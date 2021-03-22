@@ -1,7 +1,8 @@
+import React from 'react'
 import { Button, Form } from 'react-bootstrap';
 import Typed from 'react-typed';
 import Particles from 'react-particles-js';
-export const Header = (props) => {
+const Header = (props) => {
 	return (
 		<header id='header'>
 			<div className='intro'>
@@ -59,3 +60,4 @@ export const Header = (props) => {
 		</header>
 	);
 };
+export default Header;
